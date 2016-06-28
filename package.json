@@ -4,10 +4,11 @@
   "description": "“懒人”养成计划-1 #npm install",
   "main": "gulpfile.js",
   "scripts": {
-    "pre-run":"npm install",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "http-server":"http-server -p 9090",
-    "server":"npm run http-server && gulp server",
+    "pre-run": "npm install",
+    "cpre-run":"cnpm install",
+    "http-server": "http-server -p 9090",
+    "bs-server": "gulp server"
   },
   "repository": {
     "type": "git",
@@ -19,5 +20,12 @@
   "bugs": {
     "url": "https://github.com/wbye/maybe_lazy_1/issues"
   },
-  "homepage": "https://github.com/wbye/maybe_lazy_1#readme"
+  "homepage": "https://github.com/wbye/maybe_lazy_1#readme",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "browser-sync": "^2.13.0",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^2.3.2"
+  }
 }
